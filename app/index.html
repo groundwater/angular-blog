@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet"></link>
+<div ng-app="blog">
+<ng-include src="nav"></ng-include>
+<div ui-view></div>
+</div>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/ui-router/release/angular-ui-router.js"></script>
+<script src="/bower_components/angular-resource/angular-resource.js"></script>
+<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="/bower_components/MathJax/MathJax.js"></script>
+<script src="/bower_components/d3/d3.js"></script>
+<script>
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  jax: ["input/TeX","input/MathML","input/AsciiMath","output/HTML-CSS","output/NativeMML"],
+  extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+  displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+  processEscapes: true,
+});
+</script>
+<script src="/bundle.js"></script>
+<style>
+  div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override this later */
+    background-color: teal;
+}
+
+</style>

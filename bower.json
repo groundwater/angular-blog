@@ -1,0 +1,25 @@
+{
+  "name": "Blog",
+  "version": "0.0.0",
+  "authors": [
+    "Jacob Groundwater <groundwater@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "ui-router": "~0.2.11",
+    "angular-resource": "~1.2.26",
+    "bootstrap": "~3.2.0",
+    "MathJax": "~2.4.0",
+    "highlight": "~7.0.1",
+    "highlight.js": "~7.3.0",
+    "d3": "~3.4.12"
+  }
+}
